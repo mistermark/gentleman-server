@@ -50,4 +50,4 @@ env.production = {
     }
 };
 
-module.exports = env[ nodeEnv ];
+module.exports = env[ nodeEnv ] || env.development;

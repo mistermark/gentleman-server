@@ -3,10 +3,10 @@
     "title": "Gentleman – HTPC Media Manager",
     "version": "0.0.4",
     "description": "Gentleman Webbap: Managing your HTPC media files from the command line. Like a true gentleman.",
-    "main": "./server/server.js",
+    "main": "index.js",
     "scripts": {
         "test": "node node_modules/mocha/bin/mocha -R spec test/*.spec.js",
-        "start": "./bin/gulp start",
+        "start": "npm install && node ./index.js",
         "postinstall": "bower install"
     },
     "preferGlobal": "true",
@@ -40,6 +40,7 @@
         "gulp": "^3.9.0",
         "gulp-concat": "^2.6.0",
         "gulp-nodemon": "^2.0.3",
+        "gulp-util": "^3.0.6",
         "lodash": "^3.3.1",
         "log4js": "^0.6.26",
         "mkdirp": "^0.5.0",
@@ -55,7 +56,6 @@
         "async": "^0.9.0",
         "chai": "^2.1.0",
         "mocha": "^2.1.0",
-        "should": "^5.0.1",
         "sinon": "^1.12.2"
     }
 }

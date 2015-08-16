@@ -5,7 +5,7 @@ var nodemon = require( 'gulp-nodemon' );
 
 //Settings for nodeMon
 var serverConf = {
-    script: 'server/server.js',
+    script: 'index.js',
     ext: 'js html'
 };
 

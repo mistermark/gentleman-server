@@ -1,12 +1,11 @@
 var express = require( 'express' ),
-    og = require( '../lib/log' ),
-    gHandlers = require( './gman_handlers' ),
-    env = global.env || require( '../env' );
+    gHandlers = require( './handlers/gman_handlers' ),
+    env = global.env || require( './env' );
 
 var log = global.logger;
 var logger = log.logger;
 var l4js = log.l4js;
-var clientRoot = __dirname + '/../../client';
+var clientRoot = __dirname + '/../client';
 
 //filetypes allowed from root client directory
 var fileTypes = [

@@ -1,0 +1,42 @@
+{
+    "mochaOpts": {
+        "reporter": "spec",
+        "ui": "bdd"
+    },
+
+    "serverConf": {
+        "script": "index.js",
+        "ext": "js html"
+    },
+
+    "files": {
+        "server": {
+            "dir": "/server",
+            "ext": [ "js" ],
+
+            "js": {
+                "specs": [ "/test/**/*.spec.js" ],
+                "src": [ "/!test/**/*.js" ]
+            }
+        },
+
+        "client": {
+            "dir": "/client",
+            "ext": [ "js", "html", "css" ],
+
+            "js": {
+                "specs": [ "/test/**/*.spec.js" ],
+                "src": [ "/js/**/*.js", "/*.js" ]
+            },
+
+            "html": {
+                "src": [ "/**/*.html" ],
+                "index": [ "/index.html" ]
+            },
+
+            "css": {
+                "src": [ "/**/*.css" ]
+            }
+        }
+    }
+}

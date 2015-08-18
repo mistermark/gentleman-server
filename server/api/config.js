@@ -1,5 +1,4 @@
 var fs = require( 'fs' );
-var messages = require( '../lib/messages' );
 var config = {};
 
 config.delete = function( path, cb ) {
@@ -8,7 +7,7 @@ config.delete = function( path, cb ) {
             fs.unlink( path, function( err ) {
                 var success = null;
                 if ( !err ) {
-                    success = messages.successful_removed +
+                    success = "Successfully removed " +
                         ' ' + path;
                 }
 

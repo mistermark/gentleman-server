@@ -2,7 +2,7 @@ var expect = require( 'chai' )
     .expect;
 var fs = require( 'fs' );
 
-var api = require( '../server/api/api' );
+var api = require( '../api/api' );
 
 var testdir = __dirname + '/test_data';
 
